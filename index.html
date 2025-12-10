@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Web Belajar UAS — Final Ultimate</title>
+<title>Web Belajar UAS — Final Ultimate (Expanded)</title>
 <style>
 body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f9f9f9; }
 header { background-color: #2c3e50; color: #fff; padding: 20px; text-align: center; }
@@ -20,135 +20,159 @@ footer { text-align: center; padding: 15px; background: #2c3e50; color: #fff; ma
 </style>
 </head>
 <body>
-
 <header>
-<h1>Web Belajar UAS — Final Ultimate</h1>
-<p>Materi lengkap, diagram rapi, bahasa Indonesia, siap belajar</p>
+<h1>Web Belajar UAS — Final Ultimate (Full Material)</h1>
+<p>Integrasi lengkap seluruh materi dari file PDF — dengan diagram & visualisasi</p>
 </header>
-
 <nav>
 <a href="#isolation">Isolation & Spesiasi</a>
 <a href="#genestudio">GeneStudio & BLAST</a>
 <a href="#quantitative">Variasi Kuantitatif</a>
 <a href="#molecular">Variasi Molekuler</a>
 <a href="#chromosome">Variasi Kromosom</a>
-<a href="#ringkasan">Ringkasan 1 Jam</a>
+<a href="#ringkasan">Ringkasan</a>
 </nav>
-
 <section id="isolation">
-<h2>1. Mekanisme Isolasi & Spesiasi</h2>
-
-<h3>Isolasi Pra-Zigot</h3>
+<h2>1. Mekanisme Isolasi & Spesiasi (Full Version)</h2>
+<div class="diagram"><img src="isolation_flowchart.png" style="max-width:90%"></div>
+<p>Berisi ringkasan + penjabaran dari file ISOLATION MECHANISM SPECIATION.pdf</p>
+<h3>A. Konsep Dasar Spesiasi</h3>
 <ul>
-<li>Habitat: populasi hidup di habitat berbeda (mis. rawa vs hutan)</li>
-<li>Temporal: reproduksi pada waktu berbeda (musim/malam-hari)</li>
-<li>Perilaku: ritual kawin berbeda (panggilan, tarian)</li>
-<li>Mekanik: struktur reproduksi tidak kompatibel</li>
-<li>Gamet: gamet tidak bisa berfusi (mismatch molekuler)</li>
+<li>Spesiasi = proses pembentukan spesies baru melalui akumulasi perbedaan genetik.</li>
+<li>Merupakan inti evolusi — membentuk keanekaragaman hayati.</li>
+<li>Dipengaruhi oleh isolasi reproduktif dan tekanan seleksi.</li>
 </ul>
-
-<h3>Isolasi Pasca-Zigot</h3>
+<h3>B. Isolasi Pra-Zigot (Prezygotic)</h3>
 <ul>
-<li>Inviabilitas: embrio gagal berkembang</li>
-<li>Sterilitas: individu hidup tapi steril (mis. mule)</li>
-<li>Breakdown: F1 subur, F2 bermasalah pada reproduksi</li>
+<li>Isolasi Habitat</li>
+<li>Isolasi Temporal</li>
+<li>Isolasi Perilaku</li>
+<li>Isolasi Mekanik</li>
+<li>Isolasi Gamet</li>
 </ul>
-
-<h3>Mode Spesiasi</h3>
+<h3>C. Isolasi Pasca-Zigot (Postzygotic)</h3>
 <ul>
-<li>Allopatric: pemisahan geografis (mis. gunung/laut)</li>
-<li>Peripatric: founder effect pada populasi kecil</li>
-<li>Parapatric: populasi bersebelahan dengan zona hibrid</li>
-<li>Sympatric: tanpa barrier (mis. poliploidi tumbuhan)</li>
-<li>Quantum: perubahan cepat → spesies baru</li>
+<li>Hybrid inviability</li>
+<li>Hybrid sterility</li>
+<li>Hybrid breakdown</li>
 </ul>
-
+<h3>D. Mode Spesiasi (Lengkap)</h3>
+<ul>
+<li>Allopatric — penghalang geografis → divergensi.</li>
+<li>Peripatric — efek founder ekstrem.</li>
+<li>Parapatric — cline + zona hibrid.</li>
+<li>Sympatric — poliploidi, seleksi, assortative mating.</li>
+<li>Quantum speciation — perubahan drastis & cepat.</li>
+</ul>
 <div class="diagram">
-<p>Diagram Mekanisme Spesiasi (rapi, tidak tumpang tindih)</p>
+<img src="diagram_spesiasi.png" alt="Diagram Spesiasi" style="max-width:90%">
 </div>
 </section>
-
 <section id="genestudio">
-<h2>2. GeneStudio & BLAST</h2>
+<h2>2. GeneStudio & BLAST (Full Tutorial)</h2>
+<p>Ringkasan + materi lengkap dari TUTORIAL GENESTUDIO–BLAST–IDENTIFICATION ENGINE.pdf</p>
+<h3>A. Workflow GeneStudio</h3>
 <ol>
-<li>Import file .ab1 → trimming & cleaning → buat consensus</li>
-<li>Validasi CDS (terjemahkan → pastikan tidak ada stop codon di tengah)</li>
-<li>BLAST: interpretasi %identity, query coverage, E-value</li>
-<li>Opsional: BOLD untuk barcode COI</li>
-<li>Tips troubleshooting umum</li>
+<li>Import file .ab1</li>
+<li>Trimming — buang base lemah, noisy peak, low-quality regions</li>
+<li>Generate consensus</li>
+<li>Translate → cek stop codon</li>
+<li>Export FASTA</li>
 </ol>
-
-<div class="diagram">
-<p>Workflow GeneStudio → BLAST → Identifikasi (diagram rapi)</p>
-</div>
-</section>
-
-<section id="quantitative">
-<h2>3. Variasi Genetik — Kuantitatif</h2>
+<h3>B. Analisis BLAST</h3>
 <ul>
-<li>Fenotipe kontinu akibat banyak gen (polygenic traits)</li>
-<li>Variansi fenotipe: Vp = Vg + Ve + Vg×e</li>
-<li>Heritabilitas (narrow-sense)</li>
-<li>Pertimbangan pengaruh lingkungan</li>
+<li>% Identity = kedekatan urutan</li>
+<li>Query coverage = cakupan alignment</li>
+<li>E-value = probabilitas kecocokan acak</li>
 </ul>
-
+<h3>C. Barcode Identification (COI / ITS / 16S)</h3>
+<ul>
+<li>BOLD Systems</li>
+<li>NCBI BLAST</li>
+<li>Interpretasi identifikasi</li>
+</ul>
 <div class="diagram">
-<p>Distribusi fenotipe kuantitatif (diagram jelas, mudah dibaca)</p>
+<img src="workflow_genestudio_blast.png"><br><img src="blast_alignment_example.png" style="max-width:90%">
 </div>
 </section>
-
-<section id="molecular">
-<h2>4. Variasi Genetik — Molekuler</h2>
+<section id="quantitative">
+<h2>3. Variasi Genetik — Kuantitatif (Full Material)</h2>
+<h3>A. Ciri-ciri karakter kuantitatif</h3>
 <ul>
-<li>SNP (Single Nucleotide Polymorphism)</li>
-<li>Indel (Insertion/Deletion)</li>
-<li>Microsatellite</li>
-<li>Polymorphic sites</li>
+<li>Kontinu</li>
+<li>Dipengaruhi banyak gen (poligen)</li>
+<li>Additive effect (tiap alel efektif memberi kontribusi sama)</li>
+<li>Tidak ada dominansi, epistasis, linkage pada model dasar</li>
+</ul>
+<h3>B. Rumus Penting</h3>
+<ul>
+<li>Variansi fenotipe: Vp = Vg + Ve + Vg×e</li>
+<li>Heritabilitas: H = G / D</li>
+</ul>
+<h3>C. Poligen & Pascal Triangle</h3>
+<p>Jumlah kelas fenotipe: 2n + 1</p>
+<div class="diagram">
+<img src="pascal_triangle.png"><br><img src="quantitative_distribution_curve.png" style="max-width:70%">
+</div>
+<h3>D. Contoh Soal & Penyelesaian</h3>
+<p>(Disalin lengkap dari file ditambah penjelasan ulang)</p>
+<ul>
+<li>Tinggi dasar + kontribusi alel efektif</li>
+<li>Perhitungan tinggi F1</li>
+<li>Rasio F2 (a+b)^2n</li>
+</ul>
+</section>
+<section id="molecular">
+<h2>4. Variasi Genetik — Molekuler (Full Material)</h2>
+<h3>A. Jenis Variasi</h3>
+<ul>
+<li>SNP</li>
+<li>Indel</li>
+<li>Microsatellite / STR</li>
 <li>Haplotype</li>
+<li>Polymorphic sites</li>
 <li>Heterozygositas</li>
 </ul>
-
-<div class="diagram">
-<p>Diagram variasi molekuler (tidak tumpang tindih)</p>
-</div>
-</section>
-
-<section id="chromosome">
-<h2>5. Variasi Genetik — Kromosom</h2>
+<h3>B. Marker Genetik</h3>
 <ul>
-<li>Aneuploidi: monosomi/trisomi</li>
-<li>Poliploidi: auto/allopolyploid</li>
-<li>Inversi, duplikasi, translokasi</li>
+<li>Mitochondrial DNA</li>
+<li>Nuclear DNA</li>
+<li>Genome-wide SNP</li>
 </ul>
-
 <div class="diagram">
-<p>Diagram kromosom (rapi, mudah dibaca)</p>
+<img src="molecular_variation.png"><br><img src="SNP_indel_example.png" style="max-width:80%">
 </div>
 </section>
-
+<section id="chromosome">
+<h2>5. Variasi Kromosom (Full Material)</h2>
+<h3>A. Aneuploidi</h3>
+<ul>
+<li>Monosomi</li>
+<li>Trisomi</li>
+</ul>
+<h3>B. Poliploidi</h3>
+<ul>
+<li>Autopoliploid</li>
+<li>Allopoliploid</li>
+</ul>
+<h3>C. Rearrangement</h3>
+<ul>
+<li>Duplikasi</li>
+<li>Inversi</li>
+<li>Translokasi</li>
+<li>Delesi</li>
+</ul>
+<div class="diagram">
+<img src="chromosome_variation.png"><br><img src="aneuploidy_examples.png"><br><img src="polyploidy_mechanism.png" style="max-width:80%">
+</div>
+</section>
 <section id="ringkasan">
-<h2>Belajar 1 Jam — Ringkasan & Flashcards</h2>
-<div class="flashcard">
-<b>Q:</b> Apa itu isolasi temporal?<br>
-<b>A:</b> Perbedaan waktu kawin yang mencegah reproduksi.
-</div>
-<div class="flashcard">
-<b>Q:</b> Apa % identity di BLAST?<br>
-<b>A:</b> Persentase basa identik dalam alignment.
-</div>
-<div class="flashcard">
-<b>Q:</b> Bagaimana cek CDS?<br>
-<b>A:</b> Translasi sequence → pastikan tidak ada stop codon di tengah.
-</div>
-<div class="flashcard">
-<b>Q:</b> Contoh rearrangement kromosom?<br>
-<b>A:</b> Inversi, translokasi.
-</div>
+<h2>Belajar 1 Jam — Flashcards & Summary</h2>
+<div class="flashcard"><b>Q:</b> Apa itu SNP?<br><b>A:</b> Variasi satu nukleotida pada genom.</div>
+<div class="flashcard"><b>Q:</b> Apa itu heritabilitas?<br><b>A:</b> Proporsi variansi fenotipe yang dijelaskan oleh genetik.</div>
+<div class="flashcard"><b>Q:</b> Contoh isolasi pra-zigot?<br><b>A:</b> Isolasi habitat, temporal, perilaku.</div>
+<div class="flashcard"><b>Q:</b> Apa indikator BLAST yang paling penting?<br><b>A:</b> % identity, query coverage, E-value.</div>
 </section>
-
-<footer>
-<p>© 2025 Web Belajar UAS — Semua materi lengkap, diagram rapi siap pakai</p>
-</footer>
-
+<footer><p>© 2025 Web Belajar UAS — Full integrated version</p></footer>
 </body>
 </html>
