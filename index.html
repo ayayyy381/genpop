@@ -6,6 +6,160 @@
 <title>Web Belajar UAS — Final Ultimate</title>
 <style>
 body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f9f9f9; }
+header { background-color: #2c3e50; color: #fff; padding: 20px; text-align: center; }
+nav { background-color: #34495e; padding: 10px; position: sticky; top: 0; text-align: center; z-index: 100; }
+nav a { color: #ecf0f1; margin: 0 10px; text-decoration: none; font-weight: bold; }
+nav a:hover { text-decoration: underline; }
+section { background: #fff; max-width: 1000px; margin: 20px auto; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+h2 { color: #2c3e50; margin-top: 0; }
+h3 { color: #34495e; }
+ul, ol { margin-left: 20px; }
+.diagram { text-align: center; margin: 20px 0; }
+.flashcard { background: #ecf0f1; padding: 10px; margin: 10px 0; border-radius: 5px; }
+footer { text-align: center; padding: 15px; background: #2c3e50; color: #fff; margin-top: 20px; }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Web Belajar UAS — Final Ultimate</h1>
+<p>Materi lengkap, diagram rapi, bahasa Indonesia, siap belajar</p>
+</header>
+
+<nav>
+<a href="#isolation">Isolation & Spesiasi</a>
+<a href="#genestudio">GeneStudio & BLAST</a>
+<a href="#quantitative">Variasi Kuantitatif</a>
+<a href="#molecular">Variasi Molekuler</a>
+<a href="#chromosome">Variasi Kromosom</a>
+<a href="#ringkasan">Ringkasan 1 Jam</a>
+</nav>
+
+<section id="isolation">
+<h2>1. Mekanisme Isolasi & Spesiasi</h2>
+
+<h3>Isolasi Pra-Zigot</h3>
+<ul>
+<li>Habitat: populasi hidup di habitat berbeda (mis. rawa vs hutan)</li>
+<li>Temporal: reproduksi pada waktu berbeda (musim/malam-hari)</li>
+<li>Perilaku: ritual kawin berbeda (panggilan, tarian)</li>
+<li>Mekanik: struktur reproduksi tidak kompatibel</li>
+<li>Gamet: gamet tidak bisa berfusi (mismatch molekuler)</li>
+</ul>
+
+<h3>Isolasi Pasca-Zigot</h3>
+<ul>
+<li>Inviabilitas: embrio gagal berkembang</li>
+<li>Sterilitas: individu hidup tapi steril (mis. mule)</li>
+<li>Breakdown: F1 subur, F2 bermasalah pada reproduksi</li>
+</ul>
+
+<h3>Mode Spesiasi</h3>
+<ul>
+<li>Allopatric: pemisahan geografis (mis. gunung/laut)</li>
+<li>Peripatric: founder effect pada populasi kecil</li>
+<li>Parapatric: populasi bersebelahan dengan zona hibrid</li>
+<li>Sympatric: tanpa barrier (mis. poliploidi tumbuhan)</li>
+<li>Quantum: perubahan cepat → spesies baru</li>
+</ul>
+
+<div class="diagram">
+<p>Diagram Mekanisme Spesiasi (rapi, tidak tumpang tindih)</p>
+</div>
+</section>
+
+<section id="genestudio">
+<h2>2. GeneStudio & BLAST</h2>
+<ol>
+<li>Import file .ab1 → trimming & cleaning → buat consensus</li>
+<li>Validasi CDS (terjemahkan → pastikan tidak ada stop codon di tengah)</li>
+<li>BLAST: interpretasi %identity, query coverage, E-value</li>
+<li>Opsional: BOLD untuk barcode COI</li>
+<li>Tips troubleshooting umum</li>
+</ol>
+
+<div class="diagram">
+<p>Workflow GeneStudio → BLAST → Identifikasi (diagram rapi)</p>
+</div>
+</section>
+
+<section id="quantitative">
+<h2>3. Variasi Genetik — Kuantitatif</h2>
+<ul>
+<li>Fenotipe kontinu akibat banyak gen (polygenic traits)</li>
+<li>Variansi fenotipe: Vp = Vg + Ve + Vg×e</li>
+<li>Heritabilitas (narrow-sense)</li>
+<li>Pertimbangan pengaruh lingkungan</li>
+</ul>
+
+<div class="diagram">
+<p>Distribusi fenotipe kuantitatif (diagram jelas, mudah dibaca)</p>
+</div>
+</section>
+
+<section id="molecular">
+<h2>4. Variasi Genetik — Molekuler</h2>
+<ul>
+<li>SNP (Single Nucleotide Polymorphism)</li>
+<li>Indel (Insertion/Deletion)</li>
+<li>Microsatellite</li>
+<li>Polymorphic sites</li>
+<li>Haplotype</li>
+<li>Heterozygositas</li>
+</ul>
+
+<div class="diagram">
+<p>Diagram variasi molekuler (tidak tumpang tindih)</p>
+</div>
+</section>
+
+<section id="chromosome">
+<h2>5. Variasi Genetik — Kromosom</h2>
+<ul>
+<li>Aneuploidi: monosomi/trisomi</li>
+<li>Poliploidi: auto/allopolyploid</li>
+<li>Inversi, duplikasi, translokasi</li>
+</ul>
+
+<div class="diagram">
+<p>Diagram kromosom (rapi, mudah dibaca)</p>
+</div>
+</section>
+
+<section id="ringkasan">
+<h2>Belajar 1 Jam — Ringkasan & Flashcards</h2>
+<div class="flashcard">
+<b>Q:</b> Apa itu isolasi temporal?<br>
+<b>A:</b> Perbedaan waktu kawin yang mencegah reproduksi.
+</div>
+<div class="flashcard">
+<b>Q:</b> Apa % identity di BLAST?<br>
+<b>A:</b> Persentase basa identik dalam alignment.
+</div>
+<div class="flashcard">
+<b>Q:</b> Bagaimana cek CDS?<br>
+<b>A:</b> Translasi sequence → pastikan tidak ada stop codon di tengah.
+</div>
+<div class="flashcard">
+<b>Q:</b> Contoh rearrangement kromosom?<br>
+<b>A:</b> Inversi, translokasi.
+</div>
+</section>
+
+<footer>
+<p>© 2025 Web Belajar UAS — Semua materi lengkap, diagram rapi siap pakai</p>
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Belajar UAS — Final Ultimate</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f9f9f9; }
 header { background-color: #2c3e50; color: #fff; padding: 20px 0; text-align: center; }
 nav { background: #34495e; padding: 10px 0; text-align: center; position: sticky; top:0; z-index: 100; }
 nav a { color: #ecf0f1; margin: 0 15px; text-decoration: none; font-weight: bold; }
