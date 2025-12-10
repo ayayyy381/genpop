@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Web Belajar UAS - Full Ultimate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+ body { font-family: Arial, sans-serif; margin: 0; display: flex; }
+ nav { width: 260px; background: #f3f3f3; height: 100vh; padding: 20px; position: fixed; overflow-y: auto; }
+ nav h2 { font-size: 20px; margin-bottom: 10px; }
+ nav a { display: block; margin-bottom: 10px; color: #0a5ad9; text-decoration: none; font-weight: bold; }
+ main { margin-left: 280px; padding: 30px; line-height: 1.6; width: calc(100% - 280px); }
+ section { margin-bottom: 50px; }
+ h1 { font-size: 32px; }
+ h2 { font-size: 26px; margin-top: 0; }
+ .illustration { border: 1px solid #ccc; padding: 10px; margin: 12px 0; background: #fff; border-radius: 6px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <h2>Web Belajar UAS</h2>
+  <a href="#isolation">Isolation Mechanisms & Speciation</a>
+  <a href="#blast">GeneStudio & BLAST</a>
+  <a href="#quantitative">Genetic Variation – Quantitative</a>
+  <a href="#molecular">Genetic Variation – Molecular</a>
+  <a href="#chromosome">Genetic Variation – Chromosome</a>
+</nav>
+
+<main>
+<h1>Web Belajar UAS – Full Ultimate Version</h1>
+<p>Seluruh materi sudah dirangkum, diperluas, dan diilustrasikan ulang berdasarkan file-file yang kamu kirim.</p>
+
+<section id="isolation">
+<h2>Isolation Mechanisms & Speciation</h2>
+<p>Mekanisme isolasi reproduksi adalah penghalang yang mencegah aliran gen antar populasi dan menjadi dasar terbentuknya spesiasi.</p>
+
+<div class="illustration">
+<b>Diagram Konsep:</b><br>
+Prezygotic → Habitat / Temporal / Behavioral / Mechanical / Gametic<br>
+Postzygotic → Inviability / Sterility / Hybrid Breakdown
+</div>
+
+<h3>1. Isolasi Pra-Zigot</h3>
+<ul>
+  <li><b>Habitat isolation:</b> Populasi menempati habitat berbeda sehingga tidak saling bertemu.</li>
+  <li><b>Temporal isolation:</b> Perbedaan musim atau waktu reproduksi.</li>
+  <li><b>Behavioral isolation:</b> Ritual kawin spesifik.</li>
+  <li><b>Mechanical isolation:</b> Struktur genital tidak kompatibel.</li>
+  <li><b>Gametic isolation:</b> Gamet tidak dapat fusi karena inkompatibilitas molekuler.</li>
+</ul>
+
+<h3>2. Isolasi Pasca-Zigot</h3>
+<ul>
+  <li><b>Hybrid inviability:</b> zigot/hibrid gagal berkembang.</li>
+  <li><b>Hybrid sterility:</b> individu steril (cth: mule).</li>
+  <li><b>Hybrid breakdown:</b> F1 bisa hidup, F2 rusak/lemah.</li>
+</ul>
+
+<h3>3. Mode Spesiasi</h3>
+<ul>
+  <li><b>Allopatric:</b> terpisah barrier geografis.</li>
+  <li><b>Peripatric:</b> populasi kecil terisolasi di pinggiran.</li>
+  <li><b>Parapatric:</b> hibrid zone tipis, seleksi berbeda.</li>
+  <li><b>Sympatric:</b> tanpa isolasi geografis, biasanya karena poliploidi atau niche berbeda.</li>
+  <li><b>Quantum speciation:</b> perubahan cepat karena reorganisasi kromosom besar.</li>
+</ul>
+</section>
+
+<section id="blast">
+<h2>Tutorial GeneStudio, BLAST & Identification Engine</h2>
+<p>Panduan analisis sekuens DNA mulai dari membaca kromatogram, cleaning, hingga identifikasi spesies.</p>
+
+<div class="illustration">
+<b>Diagram Alur:</b><br>
+.ab1 → Editing → Consensus Sequence → (jika CDS: cek stop codon) → BLAST → Identifikasi BOLD
+</div>
+
+<h3>1. GeneStudio</h3>
+<ul>
+  <li>Import file .ab1</li>
+  <li>Perbaiki peak noise, hapus ambiguitas (N)</li>
+  <li>Reverse complement bila diperlukan</li>
+  <li>Gabung forward–reverse menjadi contig</li>
+</ul>
+
+<h3>2. Pengecekan CDS</h3>
+<ul>
+  <li>Translasi otomatis → pastikan tidak ada premature stop codon</li>
+  <li>Jika ada, ulangi editing hingga bersih</li>
+</ul>
+
+<h3>3. BLAST</h3>
+<ul>
+  <li>Gunakan BLASTn khusus untuk DNA barcode</li>
+  <li>Perhatikan %identity, query cover, dan E-value</li>
+</ul>
+
+<h3>4. Identification Engine (BOLD)</h3>
+<ul>
+  <li>Masukkan FASTA ke BOLD → Cocokkan species-level hits</li>
+</ul>
+</section>
+
+<section id="quantitative">
+<h2>Genetic Variation: Quantitative Variation</h2>
+<p>Variasi kuantitatif adalah sifat poligenik yang menghasilkan fenotipe kontinu.</p>
+
+<div class="illustration">
+<b>Diagram Distribusi:</b><br>
+Bentuk kurva normal akibat kontribusi banyak gen kecil + lingkungan.
+</div>
+
+<ul>
+  <li>Dikendalikan banyak gen (polygenic)</li>
+  <li>Fenotipe kontinu: tinggi badan, biomassa, ukuran organ</li>
+  <li>Komponen variasi: Vp = Vg + Ve + Vge</li>
+  <li>Heritabilitas (h²) menentukan kemampuan sifat merespons seleksi</li>
+</ul>
+</section>
+
+<section id="molecular">
+<h2>Genetic Variation: Molecular Variation</h2>
+<p>Mencakup variasi DNA pada level nukleotida.</p>
+
+<div class="illustration">
+<b>Diagram:</b> SNP → Polymorphic Sites → Haplotypes
+</div>
+
+<ul>
+  <li><b>SNP:</b> variasi satu basa</li>
+  <li><b>Polymorphic sites:</b> posisi genom dengan lebih dari satu alel</li>
+  <li><b>Haplotype:</b> kombinasi karakter nukleotida unik per individu</li>
+  <li><b>Heterozygosity:</b> peluang dua alel berbeda pada lokus tertentu</li>
+</ul>
+</section>
+
+<section id="chromosome">
+<h2>Genetic Variation: Chromosome Variation</h2>
+<p>Perubahan struktur atau jumlah kromosom.</p>
+
+<div class="illustration">
+<b>Diagram Klasifikasi:</b><br>
+Aneuploidi | Poliploidi | Delesi | Duplikasi | Inversi | Translokasi
+</div>
+
+<ul>
+  <li><b>Aneuploidi:</b> kehilangan/penambahan 1 kromosom (2n±1)</li>
+  <li><b>Poliploidi:</b> 3n, 4n, 6n (umum di tanaman)</li>
+  <li><b>Inversi:</b> segmen membalik</li>
+  <li><b>Delesi:</b> segmen hilang</li>
+  <li><b>Duplikasi:</b> segmen berulang</li>
+  <li><b>Translokasi:</b> pertukaran antarkromosom</li>
+</ul>
+</section>
+
+</main>
+</body>
+</html>
