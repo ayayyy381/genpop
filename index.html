@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Web Belajar UAS — Final Ultimate (Complete)</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Web Belajar UAS — Immunobiologi (Complete)</title>
 <style>
-:root{--maxw:1100px;--accent:#2c3e50;--muted:#34495e}
-body{font-family:Inter, Arial, sans-serif;margin:0;padding:0;background:#f6f8fa;color:#111}
+:root{--maxw:1100px;--accent:#1f3b4d;--muted:#2f5162}
+body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;background:#f5f8fb;color:#0b1720}
 header{background:var(--accent);color:#fff;padding:28px 16px;text-align:center}
 nav{background:var(--muted);padding:10px;position:sticky;top:0;z-index:100}
-nav a{color:#ecf0f1;margin:0 10px;text-decoration:none;font-weight:600}
-section{background:#fff;max-width:var(--maxw);margin:20px auto;padding:22px;border-radius:10px;box-shadow:0 6px 24px rgba(2,6,23,0.06)}
+nav a{color:#eef6fb;margin:0 10px;text-decoration:none;font-weight:600}
+section{background:#fff;max-width:var(--maxw);margin:18px auto;padding:20px;border-radius:10px;box-shadow:0 6px 18px rgba(7,12,20,0.06)}
 h2{color:var(--accent);margin-top:0}
 h3{color:var(--muted)}
 .diagram{display:block;margin:18px auto;text-align:center}
-.flashcard{background:#eef3f7;padding:12px;border-radius:8px;margin:10px 0}
+.flashcard{background:#eef7fa;padding:12px;border-radius:8px;margin:10px 0}
 .code{background:#0f1724;color:#e6eef8;padding:8px;border-radius:6px;font-family:monospace;overflow:auto}
 footer{text-align:center;padding:14px;background:var(--accent);color:#fff;margin-top:20px}
 @media (max-width:800px){:root{--maxw:92%}svg{height:auto!important}}
@@ -22,284 +22,220 @@ footer{text-align:center;padding:14px;background:var(--accent);color:#fff;margin
 </head>
 <body>
 <header>
-<h1>Web Belajar UAS — Final Ultimate (Complete)</h1>
-<p>Versi komplit: semua materi + visualisasi inline (SVG) agar langsung tampil di browser</p>
+<h1>Web Belajar UAS — Immunobiologi (Complete)</h1>
+<p>Versi khusus imunobiologi — semua materi dari file kuliah sudah dimuat per slide, bahasa Indonesia mudah, plus diagram SVG inline.</p>
 </header>
 <nav>
-<a href="#isolation">Isolation & Spesiasi</a>
-<a href="#genestudio">GeneStudio & BLAST</a>
-<a href="#quantitative">Variasi Kuantitatif</a>
-<a href="#molecular">Variasi Molekuler</a>
-<a href="#chromosome">Variasi Kromosom</a>
-<a href="#ringkasan">Ringkasan</a>
+<a href="#manipulasi">Manipulasi Respon Imun</a>
+<a href="#antigen">Antigen & Antibodi</a>
+<a href="#teknik">Teknik Imunologi</a>
+<a href="#ringkasan">Ringkasan & Flashcards</a>
 </nav>
 
-<section id="isolation">
-<h2>1. Mekanisme Isolasi & Spesiasi — Komprehensif</h2>
-<p>Ringkasan lengkap dari file <em>ISOLATION MECHANISM SPECIATION.pdf</em>. Setiap sub-bab dilengkapi definisi, contoh, dan visualisasi.</p>
-<h3>A. Konsep Dasar Spesiasi</h3>
+<section id="manipulasi">
+<h2>1. Manipulasi Respon Imun (Tujuan & Konsep)</h2>
+<p>Ringkasan materi dari presentasi "Manipulasi Respon Imun". Tujuan materi: memahami cara mengubah (meningkatkan atau menekan) aktivitas sistem imun untuk riset, terapi, atau aplikasi biotek.</p>
+
+<h3>A. Apa itu manipulasi respon imun?</h3>
 <ul>
-<li><b>Spesiasi</b>: proses terbentuknya spesies baru melalui akumulasi perubahan genetik dan isolasi.</li>
-<li>Perbedaan genetik + isolasi reproduktif → divergensi, adaptive radiation, atau extinctions.</li>
+<li><b>Definisi:</b> Intervensi yang mengubah aktivitas sistem imun secara terukur — bisa stimulasi atau supresi.</li>
+<li><b>Titik intervensi:</b> reseptor, sitokin, jenis sel imun, modifikasi genetik, atau lingkungan mikrobiota.</li>
+<li><b>Tujuan:</b> riset dasar, pengobatan (mis. kanker, autoimun), vaccine design, model organisme.</li>
 </ul>
 
-<h3>B. Isolasi Pra‑Zigot (Prezygotic)</h3>
+<h3>B. Imunostimulasi — Contoh dan Mekanisme</h3>
 <ul>
-<li><b>Habitat:</b> populasi hidup di habitat berbeda → jarang bertemu.</li>
-<li><b>Temporal:</b> kawin di waktu yang berbeda (musim / jam).</li>
-<li><b>Perilaku:</b> ritual kawin berbeda (mis. suara, tarian).</li>
-<li><b>Mekanik:</b> struktur reproduksi tidak kompatibel.</li>
-<li><b>Gamet:</b> gamet tidak bisa bergabung (incompatibility molekuler).</li>
-</ul>
-
-<h3>C. Isolasi Pasca‑Zigot (Postzygotic)</h3>
-<ul>
-<li><b>Inviability:</b> embrio tidak berkembang.</li>
-<li><b>Sterilitas:</b> hibrid hidup tapi steril (contoh mule).</li>
-<li><b>Breakdown:</b> generasi selanjutnya menurun kualitas reproduksinya.</li>
-</ul>
-
-<h3>D. Mode Spesiasi</h3>
-<ul>
-<li><b>Allopatric:</b> pemisahan geografis (vicariance, founder events).</li>
-<li><b>Peripatric:</b> populasi kecil terisolasi di pinggiran → genetic drift kuat.</li>
-<li><b>Parapatric:</b> populasi bersebelahan, cline lingkungan, zona hibrid.</li>
-<li><b>Sympatric:</b> tanpa barrier fisik (mis. poliploidi pada tumbuhan, assortative mating).</li>
-<li><b>Quantum:</b> spesiasi cepat—poliploidi atau rearrangement kromosom.</li>
+<li><b>Vaksinasi:</b> memasukkan antigen non-patogen untuk memicu memori imunologis (APC → T helper → B cell → antibodi & memori).</li>
+<li><b>Adjuvan:</b> zat yang memberi sinyal bahaya atau meningkatkan presentasi antigen (contoh: alum, MF59, CpG, MPL, QS-21).</li>
+<li><b>Terapi sitokin:</b> menggunakan IL-2 atau IFN untuk meningkatkan proliferasi/aktivasi sel imun.</li>
+<li><b>Imiquimod:</b> agonis TLR7 yang meniru ssRNA, mengaktifkan sel dendritik, NK, dan memodulasi respons bawaan/adaptif.</li>
+<li><b>Probiotik/imunonutrisi:</b> modifikasi mikrobiota untuk meningkatkan imun mukosa.</li>
 </ul>
 
 <div class="diagram" aria-hidden="true">
-<!-- Spesiasi flowchart full-width SVG -->
-<svg width="100%" height="240" viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg">
-<style>.t{font:16px sans-serif;fill:#0b1320}</style>
-<rect x="20" y="20" width="260" height="50" rx="8" fill="#74b9ff" stroke="#2d3436" />
-<text x="40" y="50" class="t">Pre‑zygotic isolating mechanisms</text>
-<rect x="330" y="20" width="260" height="50" rx="8" fill="#ffeaa7" stroke="#2d3436" />
-<text x="350" y="50" class="t">Post‑zygotic isolating mechanisms</text>
-<rect x="660" y="20" width="220" height="50" rx="8" fill="#fab1a0" stroke="#2d3436" />
-<text x="680" y="50" class="t">Speciation outcome</text>
+<svg width="100%" height="180" viewBox="0 0 900 180" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="220" height="50" rx="8" fill="#a8e6cf" stroke="#1f3b4d"/>
+<text x="34" y="52" font-family="sans-serif" font-size="14" fill="#073042">Imunostimulasi</text>
+<rect x="260" y="20" width="220" height="50" rx="8" fill="#ffd3b6" stroke="#1f3b4d"/>
+<text x="284" y="52" font-family="sans-serif" font-size="14" fill="#073042">Adjuvan & Vaksin</text>
+<rect x="500" y="20" width="320" height="50" rx="8" fill="#ffaaa5" stroke="#1f3b4d"/>
+<text x="520" y="52" font-family="sans-serif" font-size="14" fill="#073042">Terapi Sitokin / Small Molecules</text>
 
-<!-- details under pre-zygotic -->
-<g>
-<text x="40" y="95" class="t">Habitat — Temporal — Behavioral — Mechanical — Gametic</text>
-<line x1="160" y1="70" x2="160" y2="95" stroke="#2d3436"/>
-</g>
-
-<!-- arrow to speciation -->
-<line x1="560" y1="45" x2="660" y2="45" stroke="#2d3436" stroke-width="2" marker-end="url(#arrow)"/>
-<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#2d3436"/></marker></defs>
-
-<!-- examples -->
-<text x="40" y="140" font-size="13">Contoh:</text>
-<text x="40" y="160" font-size="13">- Sympatric: Cichlids crater lakes (Barluenga et al. 2006)</text>
-<text x="40" y="178" font-size="13">- Allopatric: populations separated by mountain/river</text>
+<line x1="240" y1="45" x2="260" y2="45" stroke="#1f3b4d" stroke-width="2" marker-end="url(#a)"/>
+<line x1="480" y1="45" x2="500" y2="45" stroke="#1f3b4d" stroke-width="2" marker-end="url(#a)"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#1f3b4d"/></marker></defs>
 </svg>
 </div>
+
+<h3>C. Imunosupresi — Contoh & Aplikasi</h3>
+<ul>
+<li><b>Glukokortikoid:</b> (kortisol, kortikosteron, obat seperti prednison/dexamethasone) menekan inflamasi dan aktivasi sel imun; penting pada kondisi autoimun atau transplant.</li>
+<li><b>Virus & faktor biologis:</b> beberapa virus menekan fungsi limfosit; Treg menekan aktivasi berlebihan.</li>
+<li><b>Penggunaan dalam model:</b> glukokortikoid untuk meniru stres-immunosuppression; knockout gen (MyD88, TLR) untuk mempelajari jalur imun.</li>
+</ul>
+
+<h3>D. Model dan Teknik dalam Riset</h3>
+<ul>
+<li><b>Model hewan imunodefisiensi:</b> mouse nude (Foxn1nu/nu) — hairless & athymic, sedikit/T cell deficiency; berguna untuk xenograft.</li>
+<li><b>Model deplesi sel:</b> Siglech-DTR untuk deplesi target dengan diptheria toxin; CSF1R inhibitor (PLX3397/PLX5622) untuk deplesi mikroglia melalui pakan (PLX-chow).</li>
+<li><b>Teknologi:</b> antibodi monoklonal, CRISPR/Cas9, siRNA/miRNA, terapi sel MSC, vaksin mRNA/rekombinan.</li>
+</ul>
+
+<h3>E. Strategi Biotek & Terapi Imun</h3>
+<p>Ringkasnya: dari mAb, checkpoint inhibitors, cytokine therapy, hingga terapi sel (CAR-T). Contoh: Trastuzumab (anti-HER2), Nivolumab (anti-PD-1), IL-2, CAR-T anti-CD19.</p>
+
 </section>
 
-<section id="genestudio">
-<h2>2. GeneStudio & BLAST — Tutorial Praktis (Lengkap)</h2>
-<p>Materi diambil dan dikembangkan dari <em>TUTORIAL GENESTUDIO-BLAST-IDENTIFICATION ENGINE.pdf</em>. Termasuk tips praktis untuk menghasilkan consensus yang bersih dan interpretasi BLAST.</p>
+<section id="antigen">
+<h2>2. Antigen & Antibodi (Slide per slide)</h2>
+<p>Materi dari presentasi "Antigen — Antibody": definisi, determinan immunogenicity, epitope, haptens, tipe antigen, mekanisme pemrosesan, dan karakteristik isotipe antibodi.</p>
 
-<h3>A. Langkah Praktis GeneStudio</h3>
+<h3>A. Definisi & Perbedaan Penting</h3>
+<ul>
+<li><b>Antigen:</b> molekul yang dikenali oleh BCR/TCR atau antibodi.</li>
+<li><b>Immunogen:</b> antigen yang mampu memicu respons imun (aktivasi T/B dan pembentukan memori).</li>
+<li><b>Antigenicity vs Immunogenicity:</b> antigenicity = kemampuan untuk dikenali; immunogenicity = kemampuan untuk memicu respons.</li>
+<li><b>Allergen:</b> antigen yang memicu IgE dan reaksi alergi; tolerogen menyebabkan toleransi imun.</li>
+</ul>
+
+<h3>B. Determinan Immunogenicity</h3>
+<ul>
+<li>Foreignness (semakin berbeda dari-self → lebih immunogenic)</li>
+<li>Ukuran (molekul besar lebih bagus), kompleksitas (protein > polisakarida > lipid)</li>
+<li>Degradasi & prosesabilitas (harus dapat diproses & dipresentasikan di MHC untuk T-dependent responses)</li>
+<li>Host factors: HLA, umur, status gizi, microbiome</li>
+<li>Formulasi/adjuvan & route (SC/IM umum baik; mucosal -> IgA / toleransi)</li>
+</ul>
+
+<h3>C. Haptens & Carrier</h3>
+<p>Hapten: molekul kecil yang dapat dikenali antibodi tetapi tidak memicu respons kecuali dikonjugasikan ke carrier protein untuk menghadirkan epitope T-helper (contoh klinis: penicillin hapten-protein yang menimbulkan alergi). Prinsip juga digunakan pada vaksin konjugat (polysaccharide + protein).</p>
+
+<h3>D. Epitop & Perbedaan B-cell vs T-cell</h3>
+<ul>
+<li><b>B-cell epitopes:</b> sering konformasional (3D) atau linear; dikenali oleh BCR/Ab pada antigen native.</li>
+<li><b>T-cell epitopes:</b> selalu linear peptide yang terikat pada MHC (CD8: 8–10 aa via MHC I; CD4: 13–18 aa via MHC II).</li>
+<li><b>Praktik:</b> Western blot deteksi linear; ELISA bisa mendeteksi conformational tergantung cara coat antigen.</li>
+</ul>
+
+<h3>E. T-Dependent vs T-Independent Antigens</h3>
+<ul>
+<li><b>T-Dependent (TD):</b> protein yang membutuhkan bantuan Tfh (CD40L-CD40 + sitokin) → germinal center, class switching, somatic hypermutation, memori kuat.</li>
+<li><b>T-Independent (TI):</b> non-protein seperti polisakarida (TI-2) atau TLR ligands (TI-1) yang memicu IgM cepat, sedikit switching, memori lemah. Konjugasi polysaccharide→protein mengubah TI → TD.
+</li>
+</ul>
+
+<h3>F. Superantigen (Singkat & Penting)</h3>
+<p>Superantigen mengikat bagian luar groove peptide pada TCR Vβ dan MHC II secara bersamaan → aktivasi poliklonal T cell sampai 20–30% → badai sitokin (toxic shock). Contoh: TSST-1 Staph. aureus.</p>
+
+<h3>G. Pemrosesan & Presentasi Antigen</h3>
+<ul>
+<li><b>MHC I (endogenous):</b> proteasom → TAP → ER → MHC I → CD8⁺</li>
+<li><b>MHC II (exogenous):</b> endosomal proteolysis → CLIP/Ii removal → HLA-DM editing → permukaan → CD4⁺</li>
+<li><b>Cross-presentation:</b> DCs dapat mempresentasikan antigen eksogen pada MHC I untuk priming CD8⁺</li>
+</ul>
+
+<div class="diagram" aria-hidden="true">
+<svg width="100%" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="260" height="60" rx="6" fill="#dfefff" stroke="#1f3b4d"/>
+<text x="40" y="55" font-size="13" fill="#073042">MHC I (Endogenous) — Proteasome → TAP → ER</text>
+<rect x="320" y="20" width="260" height="60" rx="6" fill="#ffdfe0" stroke="#1f3b4d"/>
+<text x="340" y="55" font-size="13" fill="#073042">MHC II (Exogenous) — Endosome → CLIP/HLA-DM</text>
+<line x1="280" y1="50" x2="320" y2="50" stroke="#1f3b4d" stroke-width="2" marker-end="url(#m)"/>
+<defs><marker id="m" markerWidth="8" markerHeight="8" refX="0" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#1f3b4d"/></marker></defs>
+</svg>
+</div>
+
+<h3>H. Antibodi — Struktur & Fungsi</h3>
+<ul>
+<li><b>Struktur dasar:</b> dua rantai berat (heavy) + dua rantai ringan (light) → Fab (variabel) untuk pengikatan antigen; Fc (konstan) untuk fungsi efektor (komplement, FcR).</li>
+<li><b>Fungsi utama:</b> netralisasi, opsonisasi, aktivasi komplemen, ADCC, transport (IgG placenta, IgA mukosa).</li>
+</ul>
+
+<h3>I. Isotipe Antibodi (Intinya)</h3>
+<ul>
+<li><b>IgM:</b> pentamer, pertama muncul, aviditas tinggi, aktifkan komplemen.</li>
+<li><b>IgG:</b> monomer, kerja utama di serum, netralisasi, opsonisasi, ADCC, beberapa subclass.</li>
+<li><b>IgA:</b> dimer di mukosa (sIgA) ─ mencegah perlekatan patogen.</li>
+<li><b>IgE:</b> alergi & anti-helminth, mengikat FcεRI pada mast cell.</li>
+<li><b>IgD:</b> marker sel B naif, fungsi regulasi pada aktivasi.</li>
+</ul>
+
+<h3>J. Keragaman Antibodi</h3>
+<p>Sumber keragaman: V(D)J recombination (RAG1/2), junctional diversity (TdT), heavy+light pairing, somatic hypermutation di germinal center → repertoire besar & affinity maturation.</p>
+
+</section>
+
+<section id="teknik">
+<h2>3. Teknik-Teknik dalam Penelitian Imunobiologi</h2>
+<p>Materi dari "Teknik-Teknik dalam Penelitian Imunobiologi" — dijabarkan: prinsip, output data, kelebihan/keterbatasan, contoh aplikasi.</p>
+
+<h3>A. Klasifikasi Teknik</h3>
 <ol>
-<li><b>Import & Preview:</b> buka file .ab1 — perhatikan peak colors.</li>
-<li><b>Trimming:</b> hapus base awal/akhir yang noisy (delete/backspace pada consensus).</li>
-<li><b>Edit manual:</b> cek base ambiguity (merah) dan benarkan memakai chromatogram.</li>
-<li><b>Generate consensus:</b> simpan sebagai FASTA.</li>
-<li><b>Translate (jika CDS):</b> terjemahkan → cek adanya internal stop codon (*).</li>
-<li><b>Label & simpan contig:</b> gunakan ID yang informatif (mis. 16-T01).</li>
+<li>Antigen-antibody based: ELISA, Western blot, IHC, IF</li>
+<li>Analisis sel: Flow cytometry, FACS, assay proliferasi</li>
+<li>Molekuler: PCR, qPCR, sequencing, RNA-seq</li>
+<li>Imaging: Confocal, two-photon, immune-EM</li>
 </ol>
 
-<h3>B. Interpretasi BLAST</h3>
+<h3>B. ELISA — Inti yang Perlu Diingat</h3>
 <ul>
-<li><b>% Identity:</b> persentase posisi identik dalam alignment — semakin tinggi semakin cocok.</li>
-<li><b>Query Coverage:</b> proporsi sequence yang teralign — penting untuk identifikasi sampel pendek.</li>
-<li><b>E‑value:</b> peluang mendapatkan alignment serupa secara acak — semakin kecil semakin signifikan.</li>
+<li><b>Prinsip:</b> antigen/antibodi berikatan; secondary antibody berkonjugasi enzim menghasilkan perubahan warna saat substrat ditambahkan.</li>
+<li><b>Jenis:</b> direct (cepat, kurang sensitif), indirect (sensitivitas meningkat), sandwich (paling sensitif), competitive (untuk antigen kecil).</li>
+<li><b>Kelebihan/Keterbatasan:</b> sensitif & spesifik, tapi tergantung kualitas antibodi dan raw background.</li>
 </ul>
 
-<h3>C. Barcode Identification (COI / ITS / 16S) — Visual & Tips</h3>
-<p>Langkah ringkas: ekspor FASTA → masukkan ke BOLD atau NCBI BLAST → evaluasi % identity, coverage, dan konsistensi taksonomi.</p>
-<div class="diagram" aria-hidden="true">
-<!-- GeneStudio to BLAST workflow with BLAST output mockup -->
-<svg width="100%" height="320" viewBox="0 0 1000 320" xmlns="http://www.w3.org/2000/svg">
-<style>.t2{font:14px sans-serif;fill:#0b1320}</style>
-<rect x="30" y="20" width="210" height="50" rx="8" fill="#dfe6e9" stroke="#2d3436"/>
-<text x="50" y="50" class="t2">1) Import .ab1</text>
-<rect x="280" y="20" width="210" height="50" rx="8" fill="#ffeaa7" stroke="#2d3436"/>
-<text x="300" y="50" class="t2">2) Trimming & Edit</text>
-<rect x="530" y="20" width="210" height="50" rx="8" fill="#fab1a0" stroke="#2d3436"/>
-<text x="550" y="50" class="t2">3) Consensus & Translate</text>
-<rect x="780" y="20" width="210" height="50" rx="8" fill="#81ecec" stroke="#2d3436"/>
-<text x="800" y="50" class="t2">4) BLAST / BOLD</text>
-
-<!-- arrow -->
-<line x1="240" y1="45" x2="280" y2="45" stroke="#2d3436" stroke-width="2" marker-end="url(#a)"/>
-<line x1="500" y1="45" x2="530" y2="45" stroke="#2d3436" stroke-width="2" marker-end="url(#a)"/>
-<line x1="740" y1="45" x2="780" y2="45" stroke="#2d3436" stroke-width="2" marker-end="url(#a)"/>
-<defs><marker id="a" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#2d3436"/></marker></defs>
-
-<!-- BLAST mock result box -->
-<rect x="50" y="110" width="880" height="180" rx="8" fill="#fff" stroke="#cfd8dc"/>
-<text x="70" y="140" font-size="13">BLAST top hits (mock): 1) Species A — % identity 99.6 — coverage 98% — E=0.0</text>
-<text x="70" y="160" font-size="13">2) Species A (different population) — 98.9% — coverage 95% — E=0.0</text>
-<text x="70" y="180" font-size="13">Interpretasi: cocok kuat jika identity & coverage tinggi dan konsisten taksonomi</text>
-</svg>
-</div>
-
-<p><b>Praktis:</b> kalau identifikasi COI punya identity &gt;98% dan query coverage &gt;95% — umumnya bisa dipercaya sampai genus/spesies (konfirmasi taksonomi lokal tetap dianjurkan).</p>
-
-</section>
-
-<section id="quantitative">
-<h2>3. Variasi Genetik — Kuantitatif (Komplit)</h2>
-<p>Sumber: <em>GENETIC VARIATION CONCEPT QUANTITATIVE VARIATION.pdf</em>. Disertai contoh numerik dan teknik penghitungan heritabilitas.</p>
-
-<h3>A. Karakteristik</h3>
+<h3>C. Flow Cytometry & FACS</h3>
 <ul>
-<li>Polygenic traits: banyak gen, efek kumulatif → distribusi kontinu (bell curve).</li>
-<li>Assumptions of additive model: tiap alel efektif memberi kontribusi sama, tanpa epistasis untuk model sederhana.</li>
-</ul>
-
-<h3>B. Rumus & Interpretasi</h3>
-<ul>
-<li>Variansi fenotipe: <span class="code">Vp = Vg + Ve + Vg×e</span></li>
-<li>Heritabilitas (broad/narrow): gunakan rumus yang sesuai; contoh soal ada di file.</li>
-</ul>
-
-<h3>C. Poligen & Pascal Triangle (Visual)</h3>
-<div class="diagram" aria-hidden="true">
-<!-- Pascal triangle & bell curve -->
-<svg width="100%" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
-<text x="20" y="30" font-size="18">Pascal triangle (n up to 4 polygene pairs)</text>
-<text x="40" y="70" font-size="16">1</text>
-<text x="40" y="100" font-size="16">1    1</text>
-<text x="40" y="130" font-size="16">1    2    1</text>
-<text x="40" y="160" font-size="16">1    3    3    1</text>
-<text x="40" y="190" font-size="16">1    4    6    4    1</text>
-
-<!-- small bell curve -->
-<path d="M520 200 C 540 120, 680 120, 700 200" stroke="#2d3436" fill="#dfe6e9" opacity="0.9"/>
-<line x1="560" y1="200" x2="560" y2="140" stroke="#2d3436" stroke-dasharray="4"/>
-<text x="540" y="135" font-size="13">Mean</text>
-</svg>
-</div>
-
-<h3>D. Contoh Soal (Heritability & Response)</h3>
-<p>Contoh soal catfish (dari file) — perhitungan S, G, R telah ada; rumus ringkas:</p>
-<div class="code">S = mean(parents) - mean(populasi) 
-G = mean(F1) - mean(populasi) 
-H = G / S 
-R = S * H</div>
-
-</section>
-
-<section id="molecular">
-<h2>4. Variasi Genetik — Molekuler (Detail + Visual)</h2>
-<h3>A. Jenis variasi</h3>
-<ul>
-<li><b>SNP:</b> single nucleotide polymorphism — keluasan: satu basa.</li>
-<li><b>Indel:</b> insertion/deletion beberapa nukleotida.</li>
-<li><b>Microsatellite/STR:</b> short tandem repeats — digunakan untuk studi populasi.</li>
-<li><b>Haplotype:</b> kombinasi alel di beberapa locus.</li>
-</ul>
-
-<h3>B. Marker Genetik (Lengkap & contoh penggunaan)</h3>
-<ul>
-<li><b>mtDNA (COI, 16S):</b> bagus untuk barcode spesies hewan (maternal inheritance).</li>
-<li><b>Nuclear (ITS, RAG1, S7):</b> komplementer untuk resolusi lebih tinggi dan masalah hibrid.</li>
-<li><b>SNP panel / genome‑wide:</b> untuk studi populasi modern dan adaptive loci.</li>
+<li><b>Flow Cytometry:</b> sel lewat laser satu per satu; FSC ukuran, SSC granularitas; deteksi fluoresensi marker surface/intracellular.</li>
+<li><b>FACS:</b> sorting sel berdasarkan fluoresensi — droplet charged & dikoleksi; aplikasi isolasi Treg, sel memori B, DC.</li>
 </ul>
 
 <div class="diagram" aria-hidden="true">
-<!-- marker diagram: three lanes representing mtDNA, nuclear, SNP -->
-<svg width="100%" height="240" viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg">
-<rect x="30" y="20" width="260" height="60" rx="6" fill="#ffeaa7" stroke="#2d3436"/>
-<text x="50" y="55" font-size="14">mtDNA — COI / 16S (Barcode)</text>
-<rect x="330" y="20" width="260" height="60" rx="6" fill="#dfe6e9" stroke="#2d3436"/>
-<text x="350" y="55" font-size="14">Nuclear markers — ITS, RAG1, S7</text>
-<rect x="630" y="20" width="240" height="60" rx="6" fill="#81ecec" stroke="#2d3436"/>
-<text x="650" y="55" font-size="14">SNP panels / genome‑wide</text>
-
-<!-- usage bullets -->
-<text x="40" y="110" font-size="13">Kapan digunakan:</text>
-<text x="40" y="130" font-size="13">- Identifikasi spesies: COI/16S + BOLD/BLAST</text>
-<text x="40" y="150" font-size="13">- Struktur populasi: microsatellites & SNP</text>
-<text x="40" y="170" font-size="13">- Hibrid detection: kombinasi mt & nuclear</text>
+<svg width="100%" height="160" viewBox="0 0 900 160" xmlns="http://www.w3.org/2000/svg">
+<rect x="20" y="20" width="240" height="50" rx="6" fill="#e8f8ff" stroke="#1f3b4d"/>
+<text x="40" y="52" font-size="13">Flow Cytometry — FSC / SSC / Fluorescence</text>
+<rect x="300" y="20" width="240" height="50" rx="6" fill="#fff0d6" stroke="#1f3b4d"/>
+<text x="320" y="52" font-size="13">FACS — Memisahkan sel berdasarkan fluoresensi</text>
 </svg>
 </div>
 
-</section>
+<h3>D. Western Blot</h3>
+<p>Langkah ringkas: SDS-PAGE → transfer ke membran → blocking → antibodi primer → antibodi sekunder ber-HRP → substrate → deteksi. Semi-kuantitatif dan butuh kontrol loading.</p>
 
-<section id="chromosome">
-<h2>5. Variasi Kromosom — Aneuploidi & Rearrangement</h2>
-
-<h3>A. Aneuploidi</h3>
+<h3>E. Assay Fungsional Sel</h3>
 <ul>
-<li><b>Monosomi:</b> kehilangan satu kromosom (2n-1)</li>
-<li><b>Trisomi:</b> tambahan satu kromosom (2n+1) — contoh manusia: trisomi 21</li>
+<li><b>Proliferasi:</b> MTT, BrdU, EdU</li>
+<li><b>Sitotoksisitas:</b> LDH assay</li>
+<li><b>Fagositosis:</b> uptake beads, pHrodo</li>
+<li><b>ROS:</b> DCFDA assay</li>
 </ul>
 
-<h3>B. Poliploidi</h3>
+<h3>F. qPCR dan Transcriptomics</h3>
 <ul>
-<li><b>Autopolyploid:</b> penggandaan set kromosom dari satu spesies</li>
-<li><b>Allopolyploid:</b> gabungan set kromosom dari dua spesies (sering dalam tanaman)</li>
+<li><b>qPCR:</b> kuantifikasi real-time DNA/RNA (SYBR Green atau probe TaqMan) — aplikasi: ekspresi gen, deteksi patogen.</li>
+<li><b>RNA-seq & scRNA-seq:</b> RNA-seq untuk rata-rata populasi; scRNA-seq untuk profil per-sel, resolusi tinggi.</li>
 </ul>
 
-<h3>C. Rearrangement (with inline visual examples)</h3>
-<p>Duplikasi, inversi, translokasi, delesi — semua mempengaruhi struktur kromosom dan dapat menyebabkan isolasi reproduktif.</p>
-
-<div class="diagram" aria-hidden="true">
-<svg width="100%" height="360" viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg">
-<!-- normal chromosome bar -->
-<rect x="40" y="20" width="30" height="220" rx="6" fill="#74b9ff" stroke="#2d3436"/>
-<text x="20" y="260" font-size="14">Normal (2n)</text>
-
-<!-- monosomy small bar -->
-<rect x="180" y="60" width="30" height="120" rx="6" fill="#ff7675" stroke="#2d3436"/>
-<text x="150" y="200" font-size="14">Monosomi (2n-1)</text>
-
-<!-- trisomy tall bar -->
-<rect x="320" y="20" width="30" height="280" rx="6" fill="#55efc4" stroke="#2d3436"/>
-<text x="300" y="310" font-size="14">Trisomi (2n+1)</text>
-
-<!-- rearrangement list -->
-<text x="420" y="40" font-size="16">Rearrangement examples</text>
-<text x="420" y="70" font-size="14">• Duplikasi — salinan gen bertambah</text>
-<text x="420" y="96" font-size="14">• Inversi — segmen membalik</text>
-<text x="420" y="122" font-size="14">• Translokasi — pertukaran antar kromosom</text>
-<text x="420" y="148" font-size="14">• Delesi — kehilangan segmen</text>
-
-<!-- small schematic for inversion -->
-<g transform="translate(420,170)">
-<rect x="0" y="0" width="180" height="12" fill="#cfe9ff" stroke="#2d3436"/>
-<rect x="0" y="24" width="60" height="12" fill="#74b9ff"/>
-<rect x="60" y="24" width="60" height="12" fill="#ff7675"/>
-<rect x="120" y="24" width="60" height="12" fill="#55efc4"/>
-<text x="0" y="60" font-size="12">Before</text>
-<g transform="translate(0,80)">
-<rect x="0" y="0" width="180" height="12" fill="#cfe9ff" stroke="#2d3436"/>
-<rect x="0" y="24" width="60" height="12" fill="#55efc4"/>
-<rect x="60" y="24" width="60" height="12" fill="#ff7675"/>
-<rect x="120" y="24" width="60" height="12" fill="#74b9ff"/>
-<text x="0" y="60" font-size="12">After (inversion)</text>
-</g>
-</g>
-</svg>
-</div>
+<h3>G. IHC, IF, Immune-EM, 2P-Imaging</h3>
+<ul>
+<li><b>IHC:</b> deteksi protein pada jaringan FFPE/frozen; sinyal DAB; perlu antigen retrieval dan blocking.</li>
+<li><b>IF:</b> antibodi ber-fluorophore; multi-channel; kendala: photobleaching, bleed-through.</li>
+<li><b>Immune-EM:</b> antibodi berlabel partikel emas untuk lokalisasi ultrastruktural.</li>
+<li><b>Two-photon (2P):</b> imaging in vivo dengan penetrasi lebih baik dan phototoxicity rendah — ideal untuk studi migrasi sel imun di jaringan hidup.</li>
+</ul>
 
 </section>
 
 <section id="ringkasan">
-<h2>Ringkasan — Belajar 1 Jam (Flashcards & Quick Tips)</h2>
-<div class="flashcard"><b>Q:</b> Apa itu isolasi temporal?<br><b>A:</b> Perbedaan waktu kawin yang mencegah reproduksi.</div>
-<div class="flashcard"><b>Q:</b> Apa % identity di BLAST?<br><b>A:</b> Persentase basa identik dalam alignment.</div>
-<div class="flashcard"><b>Q:</b> Kapan pakai COI vs ITS?<br><b>A:</b> COI untuk hewan/barcode; ITS sering untuk fungi & tumbuhan (kompleks).</div>
-<div class="flashcard"><b>Tip cepat:</b> Selalu cek <i>coverage</i> dan <i>% identity</i> saat interpretasi BLAST; bahkan identity tinggi rendah coverage = waspada.</div>
+<h2>Ringkasan & Flashcards (Belajar 1 Jam)</h2>
+<div class="flashcard"><b>Q:</b> Apa itu immunogen?<br><b>A:</b> Antigen yang memicu respons imun (aktivasi sel T/B & memori).</div>
+<div class="flashcard"><b>Q:</b> Bedanya antigenicity & immunogenicity?<br><b>A:</b> Antigenicity = bisa dikenali; immunogenicity = bisa mengaktifkan respon.</div>
+<div class="flashcard"><b>Q:</b> Sebut 3 fungsi utama antibodi.<br><b>A:</b> Netralisasi, opsonisasi, aktivasi komplemen (plus ADCC & transport).</div>
+<div class="flashcard"><b>Tip ujian:</b> Saat interpretasi ELISA/BLAST/etc — selalu perhatikan kontrol, spesifisitas, dan batas sensitivitas metoda.</div>
 </section>
 
 <footer>
-<p>© 2025 Web Belajar UAS — Complete integrated version — All inline diagrams are SVG so they appear without external files.</p>
+<p>© 2025 Web Belajar UAS — Immunobiologi (Complete). Sumber materi: slide kuliah yang kamu unggah (Manipulasi Respon Imun; Antigen-Antibody; Teknik-Teknik). Semua diagram adalah SVG inline agar tampil di browser tanpa file eksternal.</p>
 </footer>
 </body>
 </html>
